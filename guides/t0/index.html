@@ -1,0 +1,645 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T0 - Chalet Monchique - Guest House</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
+    <!-- dependencies -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Local dependencies -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/leaflet.css" />
+
+</head>
+<body class="theme">
+
+    
+
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="/guides/">
+                <img src="/media/cxylapb0/logo.png?v=1dd4ae77307440a" alt="Chalet L&#xED;dia Lodges" />
+            </a>
+        </div>
+
+        <!-- NAV DESKTOP -->
+        <nav class="link-underline nav-menu desktop-menu">
+            <ul>
+
+                <!-- language-menu - ref: https://github.com/lipis/flag-icons -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span class="fi fi-gb"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                            <li><a href="/pt"><span class="fi fi-pt"></span></a></li>
+                    </ul>
+                </li>
+
+                    <li>
+                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+            </ul>
+        </nav>
+
+        <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
+        <div class="mobile-nav-actions">
+                <button type="button" class="search-trigger" aria-label="Search the guide">
+                    <i class="fas fa-search"></i>
+                </button>
+
+            <button class="menu-toggle mobile-menu-button">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    
+
+
+<!-- MENU MOBILE (push menu) -->
+<nav class="mobile-nav link-underline">
+    <ul>
+            <li>
+                <button type="button" class="search-trigger" aria-label="Search the guide">
+                    <i class="fas fa-search"></i> <span>Search</span>
+                </button>
+            </li>
+        <li>
+            <!-- Language Menu -->
+            <div class="language-menu">
+                    <a href="/en"><span class="fi fi-gb"></span></a>
+                    <a href="/pt"><span class="fi fi-pt"></span></a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+    
+<!-- Hero Section -->
+<header id="hero-1381" class="hero hero-small h-[40vh]">
+    <div class="parallax-bg" style="background-image: url('/media/d4opvhu3/31_al_spedro.jpg?rxy=0.512,0.7136053231553449&amp;v=1dd4ae96df93dbe');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="flex flex-col items-center text-center">
+            <span class="headline">Guest</span>
+            <span class="headline-secondary text-[3rem]">Guide</span>
+        </h1>
+        <div class="hero-taglines">
+            <span class="tagline">Suite Lodge</span>
+        </div>
+    </div>
+</header>
+
+<!-- Guide header — shared by the home and area views, swapped by guide.js -->
+<div id="area-header" class="area-header" hidden>
+    <a href="#" class="back-link"><i class="fas fa-arrow-left"></i></a>
+    <div class="area-title-group">
+        <i class="area-icon fas fa-route"></i>
+        <h2 class="area-title headline-secondary"></h2>
+    </div>
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+        <i class="fas fa-earth-americas"></i>
+    </button>
+</div>
+
+<div id="guide-app">
+
+    <!-- ===================== HOME VIEW ===================== -->
+    <section id="view-home" class="guide-view">
+
+        <div class="area-grid">
+                <a href="#/getting-there" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-route"></i></span>
+                    <h3>Getting There</h3>
+                    <p>Address, directions and parking.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/home" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-house"></i></span>
+                    <h3>Home</h3>
+                    <p>House rules, wifi, check-in and check-out.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/local-tips" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
+                    <h3>Local Tips</h3>
+                    <p>Restaurants and bars our hosts love.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/emergency" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
+                    <h3>Emergency</h3>
+                    <p>Contacts for anything urgent.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/faqs" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
+                    <h3>FAQs</h3>
+                    <p>Quick answers to common questions.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+        </div>
+
+    </section>
+
+    <!-- ===================== AREA DETAIL VIEW ===================== -->
+    <section id="view-area" class="guide-view" hidden>
+
+        <div class="guide-layout">
+
+            <div id="area-tag-filter" class="area-tag-filter" hidden></div>
+
+            <nav class="guide-toc hidden lg:block lg:col-span-4"></nav>
+
+            <div class="lg:col-span-8 guide-topics">
+
+
+<section class="topic-list" data-area="getting-there" data-area-title="Getting There" data-area-icon="fas fa-route" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Everything you need to find us, park nearby, and get in without any hassle.</p>
+
+
+
+<details class="topic" data-topic="address" data-coords="38.6951,-9.3718" data-tags="house">
+    <summary class="topic-header">
+        <i class="fas fa-location-dot topic-icon"></i>
+        <span class="topic-title">Address</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6951,-9.3718" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+            </div>
+        <p>Rua 5 de Outubro nº 108<br>2765-522 São Pedro do Estoril</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="car-parking" data-coords="" data-tags="parking">
+    <summary class="topic-header">
+        <i class="fas fa-square-parking topic-icon"></i>
+        <span class="topic-title">Car Parking</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p dir="ltr"><strong>Public street parking in our block&nbsp;</strong></p>
+<ul>
+<li><strong>paid</strong> from 9h to 20h and a max of 4h is allowed (1€ per hour);</li>
+<li>you can pay via the app mobicascais in Google play ou App store.</li>
+</ul>
+<p dir="ltr"><strong>Nearby car park&nbsp;</strong></p>
+<ul>
+<li><a type="external" href="https://maps.app.goo.gl/mrREzkqtt2RauQAeA" title="https://maps.app.goo.gl/mrREzkqtt2RauQAeA"></a><a type="external" href="https://maps.app.goo.gl/mrREzkqtt2RauQAeA" title="parking location">parking location</a> 290m away (4min walk)</li>
+<li>payment is done in cash only <a type="external" href="https://maps.app.goo.gl/nqo3RSLbMEADEdhHA" title="here">here</a></li>
+<li>2€ per day from May to September and 1€ per day from October to Abril</li>
+<li>to come back just <a type="external" href="https://maps.app.goo.gl/GBeX3eWiFjiSugrUA" title="take the street parallel to train station">take the street parallel to train station</a> until you find Chalet Lídia Lodges</li>
+</ul>
+<p><strong>Parking inside the property</strong></p>
+<ul>
+<li>parking inside the property maybe granted upon request;</li>
+<li>please contact the host during your stay</li>
+</ul>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="open-property-gate-from-inside" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-door-closed topic-icon"></i>
+        <span class="topic-title">Open property gate from inside</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>There's a button on the right side of the main gate, near the floor.&nbsp;<br>You can trigger it with your feet to exit.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="find-your-lodge" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-binoculars topic-icon"></i>
+        <span class="topic-title">Find your Lodge</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <div>- after the main gate turn left and then go down stairs.</div>
+<div>- when you are downstairs you will see 2 glass doors. The suite Lodge door is on the left.</div>
+<div>- to access your lodge insert the same code from the main gate (again press # in the end)</div>
+<div>- when you press each number a small green light will light up in the top right corner</div>
+<div>- if the code is correct the small green light blinks and you'll hear the lock unlocking</div>
+<div>- when it's unlocked please turn the handle to the left and up so the handle stays in vertical position and push the door inside and slide to the left.</div>
+<div>
+<div class="mceNonEditable umb-embed-holder" data-embed-url="https://youtu.be/0pP7HoTRjag" data-embed-constrain="false"><iframe width="360" height="203" src="https://www.youtube.com/embed/0pP7HoTRjag?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen" title="VID 20251127 121242"></iframe></div>
+</div>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="lock-your-lodge" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-lock topic-icon"></i>
+        <span class="topic-title">Lock your lodge</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>From the outside:</p>
+<ul>
+<li>close the door by sliding it to the right and pull the handle towards you. Then rotate the handle to the left and then to the bottom until the handle is in vertical position again. Like this the door is closed but not locked. To lock it please press the # for 3 to 4 seconds until you hear the noise of the locker.&nbsp;</li>
+</ul>
+<p>From the inside:</p>
+<p>- TODO</p>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="home" data-area-title="Home" data-area-icon="fas fa-house" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">House rules, wifi access, and check-in/check-out times for a smooth stay.</p>
+
+
+
+<details class="topic" data-topic="house-rules" data-coords="" data-tags="house-rules">
+    <summary class="topic-header">
+        <i class="fas fa-check topic-icon"></i>
+        <span class="topic-title">House Rules</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>your host lives on the same location of your rental</li>
+<li>outside areas (garden and swimming pool) are shared with other guests and hosts;</li>
+<li>the indoor space is private for you only</li>
+<li>respect night time</li>
+<li>&nbsp;no parties or extra guests are allowed</li>
+<li>swimming pool is not fenced: children must be supervised</li>
+<li>there are 3 security cameras outside in common passage areas&nbsp;</li>
+</ul>
+<p dir="ltr">We’re sorry if you are uncomfortable with any of the above. In that case, please cancel your reservation.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="wifi" data-coords="" data-tags="wifi">
+    <summary class="topic-header">
+        <i class="fas fa-wifi topic-icon"></i>
+        <span class="topic-title">Wifi</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>The network name and password are displayed near the TV in the living room. If you can't find them, just message your host and we'll send them right over.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="check-in-check-out" data-coords="" data-tags="logistics">
+    <summary class="topic-header">
+        <i class="fas fa-key topic-icon"></i>
+        <span class="topic-title">Check-in / Check-out</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Check-in is from 3:00 PM and check-out is until 11:00 AM. Contact your host if you need a different time — we'll do our best to accommodate you.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="trash" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-trash-can topic-icon"></i>
+        <span class="topic-title">Trash</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>There's a regular trash container and recycling container right accross the street on the sidewalk on the train station side.<br>When you leave the property just cross to the train station side and go left.</p>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="local-tips" data-area-title="Local Tips" data-area-icon="fas fa-utensils" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Restaurants and bars our hosts love, all within walking distance.</p>
+
+
+
+<details class="topic" data-topic="fauna-and-flora" data-coords="38.694765,-9.372163" data-tags="restaurant,breakfast">
+    <summary class="topic-header">
+        <i class="fas fa-mug-saucer topic-icon"></i>
+        <span class="topic-title">Fauna and Flora</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;12&#x2013;18 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694765,-9.372163" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.faunafloralisboa.com/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 969 925 478"><i class="fas fa-phone"></i> &#x2B;351 969 925 478</a>
+            </div>
+        <p>For breakfast, a healthy lunch or brunch!</p>
+            <div class="topic-slider swiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/media/yf5drjwb/fauna-flora-1.jpg?width=1000&amp;height=750&amp;format=webp&amp;quality=75&amp;v=1dd4ae7730b24be" alt="Fauna and Flora" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="boteco-da-linha" data-coords="38.694629,-9.370893" data-tags="restaurant,bar">
+    <summary class="topic-header">
+        <i class="fas fa-utensils topic-icon"></i>
+        <span class="topic-title">Boteco da Linha</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;15&#x2013;25 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694629,-9.370893" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.instagram.com/botecodalinha/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 21 468 6125"><i class="fas fa-phone"></i> &#x2B;351 21 468 6125</a>
+            </div>
+        <p>For a nice dinner with some Portuguese specialities.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="paco-bigotes" data-coords="38.695264,-9.372337" data-tags="restaurant">
+    <summary class="topic-header">
+        <i class="fas fa-pepper-hot topic-icon"></i>
+        <span class="topic-title">Pa&#xE7;o Bigotes</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;18&#x2013;25 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.695264,-9.372337" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.pacobigotes.pt/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 21 407 6708"><i class="fas fa-phone"></i> &#x2B;351 21 407 6708</a>
+            </div>
+        <p>Our favourite Mexican restaurant.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="companhia-das-bebidas" data-coords="38.6953,-9.3724" data-tags="bar">
+    <summary class="topic-header">
+        <i class="fas fa-martini-glass-citrus topic-icon"></i>
+        <span class="topic-title">Companhia das Bebidas</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;15&#x2013;20 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6953,-9.3724" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.instagram.com/compania_de_bebidas/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 21 466 5067"><i class="fas fa-phone"></i> &#x2B;351 21 466 5067</a>
+            </div>
+        <p>The best bar in the world! Try the spicy margaritas and some oysters.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="o-mira" data-coords="38.694336,-9.370371" data-tags="restaurant">
+    <summary class="topic-header">
+        <i class="fas fa-fish topic-icon"></i>
+        <span class="topic-title">O Mira</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;25&#x2013;35 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694336,-9.370371" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://omira.eatbu.com/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 21 468 8069"><i class="fas fa-phone"></i> &#x2B;351 21 468 8069</a>
+            </div>
+        <p>Seafood restaurant.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="ponta-do-sal" data-coords="38.693545,-9.372093" data-tags="bar,beach">
+    <summary class="topic-header">
+        <i class="fas fa-champagne-glasses topic-icon"></i>
+        <span class="topic-title">Ponta do Sal</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;8&#x2013;15 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.693545,-9.372093" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.facebook.com/pontadosal/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+            </div>
+        <p>Finger food and drinks with the best view.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="mar-de-sal" data-coords="38.6938,-9.3696" data-tags="restaurant,bar,beach">
+    <summary class="topic-header">
+        <i class="fas fa-music topic-icon"></i>
+        <span class="topic-title">Mar de Sal</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;30&#x2013;40 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3696" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://mardsal.shop/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 960 096 081"><i class="fas fa-phone"></i> &#x2B;351 960 096 081</a>
+            </div>
+        <p>Right at the beach, with live music on Fridays and Saturdays.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="esplanada-de-sao-pedro" data-coords="38.6938,-9.3692" data-tags="bar,beach">
+    <summary class="topic-header">
+        <i class="fas fa-umbrella-beach topic-icon"></i>
+        <span class="topic-title">Esplanada de S&#xE3;o Pedro</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;10&#x2013;15 per person</span>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3692" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.instagram.com/esplanadasaopedro/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+                    <a class="topic-meta-item" href="tel:&#x2B;351 21 467 0027"><i class="fas fa-phone"></i> &#x2B;351 21 467 0027</a>
+            </div>
+        <p>Also right at the beach — try the garlic bread and the sangria.</p>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="emergency" data-area-title="Emergency" data-area-icon="fas fa-triangle-exclamation" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Contacts to reach out to if anything urgent comes up during your stay.</p>
+
+
+
+<details class="topic" data-topic="emergency-contacts" data-coords="38.7238,-9.4103" data-tags="emergency,hospital">
+    <summary class="topic-header">
+        <i class="fas fa-phone topic-icon"></i>
+        <span class="topic-title">Emergency Contacts</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+            <div class="topic-meta">
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.7238,-9.4103" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+            </div>
+        <ul><li>European emergency number (police, ambulance, fire): <strong>112</strong></li><li>Nearest hospital: Hospital de Cascais - Dr. José de Almeida</li><li>Your host is available via WhatsApp for anything urgent: <em>[host phone number]</em></li></ul>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="faqs" data-area-title="FAQs" data-area-icon="fas fa-circle-question" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Quick answers to the questions guests ask us most often.</p>
+
+
+
+<details class="topic" data-topic="is-parking-available" data-coords="" data-tags="parking,faq">
+    <summary class="topic-header">
+        <i class="fas fa-circle-question topic-icon"></i>
+        <span class="topic-title">Is parking available?</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Yes, paid street parking is available nearby. See Getting There → Car Parking for full details.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="what-are-the-check-in-and-check-out-times" data-coords="" data-tags="logistics,faq">
+    <summary class="topic-header">
+        <i class="fas fa-circle-question topic-icon"></i>
+        <span class="topic-title">What are the check-in and check-out times?</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Check-in is from 3:00 PM and check-out is until 11:00 AM. Contact your host for a different time.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="are-pets-allowed" data-coords="" data-tags="pets,faq">
+    <summary class="topic-header">
+        <i class="fas fa-circle-question topic-icon"></i>
+        <span class="topic-title">Are pets allowed?</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Please contact your host before booking if you're travelling with pets.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="is-air-conditioning-or-heating-available" data-coords="" data-tags="amenities,faq">
+    <summary class="topic-header">
+        <i class="fas fa-circle-question topic-icon"></i>
+        <span class="topic-title">Is air conditioning or heating available?</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Yes, the apartment is equipped with A/C for both heating and cooling.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="do-you-provide-towels-and-linens" data-coords="" data-tags="amenities,faq">
+    <summary class="topic-header">
+        <i class="fas fa-circle-question topic-icon"></i>
+        <span class="topic-title">Do you provide towels and linens?</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Yes, fresh towels and bed linens are provided for your stay.</p>
+    </div>
+</details>
+
+</section>
+            </div>
+
+            <div id="area-map" class="area-map" hidden>
+                <div class="area-map-canvas" id="area-map-canvas"></div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Search overlay -->
+<div id="search-overlay" class="search-overlay" hidden>
+    <div class="search-backdrop"></div>
+    <div class="search-panel">
+        <div class="search-panel-header">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+</div>
+
+    
+<!-- Footer -->
+<footer class="footer">
+    <!-- Parte preta -->
+    <div class="footer-top bg-gray-950 text-white text-center py-4">
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <ul class="link-underline flex justify-center gap-8">
+            <li>
+                <a href="#sobre" class="flex items-center gap-1">
+                    <i class="fab fa-airbnb"></i> Airbnb
+                </a>
+            </li>
+            <li>
+                <a href="#menu" class="flex items-center gap-1">
+                    <i class="fas fa-hotel"></i> Booking.com
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Parte cinza -->
+    <div class="footer-bottom bg-gray-800 text-center py-2">
+        <p>&copy; 2026 Eighty Two, Lda</p>
+    </div>
+</footer>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/colcade/colcade.js"></script> -->
+    <!-- Local dependencies -->
+    <script src="/assets/js/leaflet.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/colcade.js"></script>
+    <script src="/js/bundle.js"></script>
+
+<!-- Cached by xStatic --></body>
+
+</html>

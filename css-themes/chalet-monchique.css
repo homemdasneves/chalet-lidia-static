@@ -1,0 +1,45 @@
+/* https://fonts.google.com/share?selection.family=Herr+Von+Muellerhoff|Source+Sans+3:ital,wght@0,200..900;1,200..900 */
+
+/* import from font delivery service */
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.theme {
+  --headline-color: #dbcca0;
+  --headline-color-secondary: #ffffff;
+  --swiper-navigation-color: var(--headline-color);
+  --swiper-theme-color: var(--headline-color);
+  --headline-bg-dark: #7a766b;
+}
+
+.headline {
+  font-family: 'Herr Von Muellerhoff', 'Times New Roman', serif;
+  font-size: 7rem;
+  font-weight: normal;
+  color: var(--headline-color);
+  margin-bottom: -6rem;
+}
+
+.headline-secondary {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 200;
+}
+
+.hero .headline-secondary {
+  color: var(--headline-color-secondary);
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 5rem; 
+    margin-bottom: -4rem; 
+  }
+
+  .headline-secondary {
+    font-size: 2.5rem; 
+  }
+}
+
+.theme .btn {
+  background-color: var(--headline-color);
+  color: var(--headline-color-secondary);
+}

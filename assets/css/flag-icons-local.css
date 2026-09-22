@@ -1,0 +1,31 @@
+/* Flag Icons CSS - Local Version */
+.fi {
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.fi-pt {
+  background-image: url(./flags/pt.svg);
+}
+
+.fi-gb {
+  background-image: url(./flags/gb.svg);
+}
+
+.fi-fr {
+  background-image: url(./flags/fr.svg);
+}
+
+.fi-es {
+  background-image: url(./flags/es.svg);
+}
+
+/* Square flags */
+.fi.fis {
+  width: 1em;
+}
