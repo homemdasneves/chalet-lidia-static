@@ -460,12 +460,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!leafletMap) {
       leafletMap = L.map(areaMapCanvasEl);
-      // Stadia Maps requires an API key for any domain other than
-      // localhost - replace STADIA_API_KEY below with a real key before
-      // deploying, or requests will be rejected.
-      L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg?api_key=STADIA_API_KEY', {
-        attribution: '© CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | © <a href="https://www.stadiamaps.com/" target="_blank" rel="noopener">Stadia Maps</a> © <a href="https://openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
-        maxZoom: 20
+      // Esri World Imagery - free satellite tiles, no API key required.
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+        maxZoom: 19
       }).addTo(leafletMap);
       leafletMarkersLayer = L.layerGroup().addTo(leafletMap);
     }
