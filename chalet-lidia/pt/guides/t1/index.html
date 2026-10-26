@@ -1,0 +1,351 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T1 - Chalet Monchique - Guest House</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
+    <!-- dependencies -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Local dependencies -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/leaflet.css" />
+
+</head>
+<body class="theme">
+
+    
+
+
+<header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="/chalet-lidia/pt/guides/">
+                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
+            </a>
+        </div>
+
+        <!-- NAV DESKTOP -->
+        <nav class="link-underline nav-menu desktop-menu">
+            <ul>
+
+                <!-- language-menu - ref: https://github.com/lipis/flag-icons -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span class="fi fi-pt"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                            <li><a href="/chalet-lidia/guides/t1/"><span class="fi fi-gb"></span></a></li>
+                            <li><a href="/chalet-lidia/es/guides/t1/"><span class="fi fi-es"></span></a></li>
+                            <li><a href="/chalet-lidia/fr/guides/t1/"><span class="fi fi-fr"></span></a></li>
+                    </ul>
+                </li>
+
+                    <li>
+                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+            </ul>
+        </nav>
+
+        <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
+        <div class="mobile-nav-actions">
+                <button type="button" class="search-trigger" aria-label="Search the guide">
+                    <i class="fas fa-search"></i>
+                </button>
+
+            <button class="menu-toggle mobile-menu-button">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    
+
+
+<!-- MENU MOBILE (push menu) -->
+<nav class="mobile-nav link-underline">
+    <ul>
+            <li>
+                <button type="button" class="search-trigger" aria-label="Search the guide">
+                    <i class="fas fa-search"></i> <span>Search</span>
+                </button>
+            </li>
+        <li>
+            <!-- Language Menu -->
+            <div class="language-menu">
+                    <a href="/chalet-lidia/guides/t1/"><span class="fi fi-gb"></span></a>
+                    <a href="/chalet-lidia/pt/guides/t1/"><span class="fi fi-pt"></span></a>
+                    <a href="/chalet-lidia/es/guides/t1/"><span class="fi fi-es"></span></a>
+                    <a href="/chalet-lidia/fr/guides/t1/"><span class="fi fi-fr"></span></a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+    
+<!-- Hero Section -->
+<header id="hero-1426" class="hero hero-small h-[40vh]">
+    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="flex flex-col items-center text-center">
+            <span class="headline">Guia do</span>
+            <span class="headline-secondary text-[3rem]">H&#xF3;spede</span>
+        </h1>
+        <div class="hero-taglines">
+            <span class="tagline">Lodge com Vista para a Piscina</span>
+        </div>
+    </div>
+</header>
+
+<!-- Guide header — shared by the home and area views, swapped by guide.js -->
+<div id="area-header" class="area-header" hidden>
+    <a href="#" class="back-link"><i class="fas fa-arrow-left"></i></a>
+    <div class="area-title-group">
+        <i class="area-icon fas fa-route"></i>
+        <h2 class="area-title headline-secondary"></h2>
+    </div>
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+        <i class="fas fa-earth-americas"></i>
+    </button>
+</div>
+
+<div id="guide-app">
+
+    <!-- ===================== HOME VIEW ===================== -->
+    <section id="view-home" class="guide-view">
+
+        <div class="area-grid">
+                <a href="#/como-chegar" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-route"></i></span>
+                    <h3>Como chegar</h3>
+                    <p>Morada, indica&#xE7;&#xF5;es e estacionamento.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/inicio" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-house"></i></span>
+                    <h3>In&#xED;cio</h3>
+                    <p>Regras da casa, wifi, check-in e check-out.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/dicas-locais" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
+                    <h3>Dicas locais</h3>
+                    <p>Restaurantes e bares de que os nossos anfitri&#xF5;es gostam.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/emergencia" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
+                    <h3>Emerg&#xEA;ncia</h3>
+                    <p>Contactos para qualquer assunto urgente.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#/perguntas-frequentes" class="area-card">
+                    <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
+                    <h3>Perguntas frequentes</h3>
+                    <p>Respostas r&#xE1;pidas &#xE0;s perguntas mais comuns.</p>
+                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                </a>
+        </div>
+
+    </section>
+
+    <!-- ===================== AREA DETAIL VIEW ===================== -->
+    <section id="view-area" class="guide-view" hidden>
+
+        <div class="guide-layout">
+
+            <div id="area-tag-filter" class="area-tag-filter" hidden></div>
+
+            <nav class="guide-toc hidden lg:block lg:col-span-4"></nav>
+
+            <div class="lg:col-span-8 guide-topics">
+
+
+<section class="topic-list" data-area="como-chegar" data-area-title="Como chegar" data-area-icon="fas fa-route" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Tudo o que precisa para nos encontrar, estacionar perto e entrar sem complica&#xE7;&#xF5;es.</p>
+
+
+
+<details class="topic" data-topic="encontre-o-seu-lodge" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-binoculars topic-icon"></i>
+        <span class="topic-title">Encontre o seu Lodge</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>depois do portão principal vire à esquerda e desça as escadas.</li>
+<li>quando estiver em baixo verá 2 portas de vidro; o lodge suite fica à&nbsp;<strong>esquerda</strong>.</li>
+<li>para aceder ao seu lodge, introduza o mesmo código do portão principal (volte a premir # no final)</li>
+<li>ao premir cada número, acende-se uma pequena luz verde no canto superior direito</li>
+<li>se o código estiver correto, a pequena luz verde pisca e ouvirá a fechadura a destrancar (aguarde até terminar)</li>
+<li>quando estiver destrancada, rode o manípulo para a esquerda e para cima até ficar na vertical, empurre a porta para dentro e deslize-a para a esquerda.</li>
+</ul>
+<div>
+<div class="mceNonEditable umb-embed-holder" data-embed-url="https://youtu.be/cOSNUYOZybk" data-embed-constrain="false"><iframe width="360" height="203" src="https://www.youtube.com/embed/cOSNUYOZybk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen" title="CLL Pool - Access from street"></iframe></div>
+</div>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="inicio" data-area-title="In&#xED;cio" data-area-icon="fas fa-house" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Regras da casa, acesso ao wifi e hor&#xE1;rios de check-in/check-out para uma estadia tranquila.</p>
+
+
+
+<details class="topic" data-topic="trancar-por-fora" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-lock topic-icon"></i>
+        <span class="topic-title">Trancar por fora</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>basta fechar a porta, o manípulo tranca automaticamente</li>
+</ul>
+<div class="mceNonEditable umb-embed-holder" data-embed-url="https://youtu.be/D_VnoxOHkZM" data-embed-constrain="false"><iframe width="360" height="203" src="https://www.youtube.com/embed/D_VnoxOHkZM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen" title="CLL Pool  - From Outside - Lock"></iframe></div>
+<p>&nbsp;</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="destrancar-por-fora" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-lock-open topic-icon"></i>
+        <span class="topic-title">Destrancar por fora</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>introduza o seu código de acesso e termine com o botão #</li>
+<li>deverá ouvir "unlocked"</li>
+<li>pode usar o manípulo para abrir a porta&nbsp;</li>
+</ul>
+<div class="mceNonEditable umb-embed-holder" data-embed-url="https://youtu.be/74t4AIdnnvo" data-embed-constrain="false"><iframe width="360" height="203" src="https://www.youtube.com/embed/74t4AIdnnvo?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen" title="CLL Pool - From Outside - Unlock"></iframe></div>
+<p>&nbsp;</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="fechar-os-estores-blackout" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-moon topic-icon"></i>
+        <span class="topic-title">Fechar os estores blackout</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>há um comando pendurado na parede entre os quartos</li>
+<li>prima para baixo para fechar e para cima para abrir</li>
+<li>pode controlar os dois estores em simultâneo ou cada um individualmente, premindo o botão na parte inferior do comando (com um traço "—")</li>
+</ul>
+<p>&nbsp;</p>
+<div class="mceNonEditable umb-embed-holder" data-embed-url="https://youtu.be/wCu_rY_CxME" data-embed-constrain="false"><iframe width="360" height="203" src="https://www.youtube.com/embed/wCu_rY_CxME?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen" title="CLL Pool - From Inside - Blackout"></iframe></div>
+<p>&nbsp;</p>
+    </div>
+</details>
+
+</section>
+
+
+<section class="topic-list" data-area="dicas-locais" data-area-title="Dicas locais" data-area-icon="fas fa-utensils" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Restaurantes e bares de que os nossos anfitri&#xF5;es gostam, todos a uma curta dist&#xE2;ncia a p&#xE9;.</p>
+
+
+</section>
+
+
+<section class="topic-list" data-area="emergencia" data-area-title="Emerg&#xEA;ncia" data-area-icon="fas fa-triangle-exclamation" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Contactos a utilizar caso surja algum assunto urgente durante a sua estadia.</p>
+
+
+</section>
+
+
+<section class="topic-list" data-area="perguntas-frequentes" data-area-title="Perguntas frequentes" data-area-icon="fas fa-circle-question" hidden
+    data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
+
+    <p class="topic-list-intro">Respostas r&#xE1;pidas &#xE0;s perguntas que os h&#xF3;spedes mais nos colocam.</p>
+
+
+</section>
+            </div>
+
+            <div id="area-map" class="area-map" hidden>
+                <div class="area-map-canvas" id="area-map-canvas"></div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Search overlay -->
+<div id="search-overlay" class="search-overlay" hidden>
+    <div class="search-backdrop"></div>
+    <div class="search-panel">
+        <div class="search-panel-header">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+</div>
+
+    
+<!-- Footer -->
+<footer class="footer">
+    <!-- Parte preta -->
+    <div class="footer-top bg-gray-950 text-white text-center py-4">
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <ul class="link-underline flex justify-center gap-8">
+            <li>
+                <a href="#sobre" class="flex items-center gap-1">
+                    <i class="fab fa-airbnb"></i> Airbnb
+                </a>
+            </li>
+            <li>
+                <a href="#menu" class="flex items-center gap-1">
+                    <i class="fas fa-hotel"></i> Booking.com
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Parte cinza -->
+    <div class="footer-bottom bg-gray-800 text-center py-2">
+        <p>&copy; 2026 Eighty Two, Lda</p>
+    </div>
+</footer>
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/colcade/colcade.js"></script> -->
+    <!-- Local dependencies -->
+    <script src="/assets/js/leaflet.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/colcade.js"></script>
+    <script src="/js/bundle.js"></script>
+
+<!-- Cached by xStatic --></body>
+
+</html>
