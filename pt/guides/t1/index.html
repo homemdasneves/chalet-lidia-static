@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T1 - Chalet Monchique - Guest House</title>
+    <title>Lodge com Vista para a Piscina Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/pt/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -46,7 +44,7 @@
                 </li>
 
                     <li>
-                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                        <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
                             <i class="fas fa-search"></i>
                         </button>
                     </li>
@@ -55,7 +53,7 @@
 
         <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
         <div class="mobile-nav-actions">
-                <button type="button" class="search-trigger" aria-label="Search the guide">
+                <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
                     <i class="fas fa-search"></i>
                 </button>
 
@@ -74,8 +72,8 @@
 <nav class="mobile-nav link-underline">
     <ul>
             <li>
-                <button type="button" class="search-trigger" aria-label="Search the guide">
-                    <i class="fas fa-search"></i> <span>Search</span>
+                <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
+                    <i class="fas fa-search"></i> <span>Pesquisar</span>
                 </button>
             </li>
         <li>
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1426" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660');"></div>
+    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660'); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -113,12 +111,16 @@
         <i class="area-icon fas fa-route"></i>
         <h2 class="area-title headline-secondary"></h2>
     </div>
-    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Mudar para vista de mapa">
         <i class="fas fa-earth-americas"></i>
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="Tudo o que precisa de saber para uma estadia perfeita."
+     data-label-map-view="Mudar para vista de mapa"
+     data-label-list-view="Mudar para vista de lista"
+     data-label-no-results="Sem resultados para">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -128,31 +130,31 @@
                     <span class="area-card-icon"><i class="fas fa-route"></i></span>
                     <h3>Como chegar</h3>
                     <p>Morada, indica&#xE7;&#xF5;es e estacionamento.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/inicio" class="area-card">
+                <a href="#/em-casa" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>In&#xED;cio</h3>
+                    <h3>Em casa</h3>
                     <p>Regras da casa, wifi, check-in e check-out.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/dicas-locais" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
                     <h3>Dicas locais</h3>
                     <p>Restaurantes e bares de que os nossos anfitri&#xF5;es gostam.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/emergencia" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
                     <h3>Emerg&#xEA;ncia</h3>
                     <p>Contactos para qualquer assunto urgente.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/perguntas-frequentes" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
                     <h3>Perguntas frequentes</h3>
                     <p>Respostas r&#xE1;pidas &#xE0;s perguntas mais comuns.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
         </div>
 
@@ -201,7 +203,7 @@
 </section>
 
 
-<section class="topic-list" data-area="inicio" data-area-title="In&#xED;cio" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="em-casa" data-area-title="Em casa" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">Regras da casa, acesso ao wifi e hor&#xE1;rios de check-in/check-out para uma estadia tranquila.</p>
@@ -260,6 +262,22 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="berco-de-bebe" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-baby topic-icon"></i>
+        <span class="topic-title">Ber&#xE7;o de beb&#xE9;</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>normalmente tentamos deixar os berços montados para os hóspedes que indicam essa necessidade;</li>
+<li>se necessita de berço e não ficou montado, pode encontrar o berço, colchão e roupa dentro da cama;</li>
+<li>para abrir a cama, puxe para cima as alças que se encontram na parte lateral da cama;</li>
+</ul>
+    </div>
+</details>
+
 </section>
 
 
@@ -305,8 +323,8 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
-            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+            <input type="text" id="search-input" placeholder="Pesquisar no guia&#x2026;" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Fechar pesquisa"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
     </div>

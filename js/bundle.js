@@ -160,7 +160,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var areaBackLinkEl = areaHeader.querySelector('.back-link');
   var areaIconEl = areaHeader.querySelector('.area-icon');
   var areaTitleEl = areaHeader.querySelector('.area-title');
-  var HOME_HEADER_TEXT = 'All you need to know for a great stay.';
+  var HOME_HEADER_TEXT = app.getAttribute('data-home-header') || 'All you need to know for a great stay.';
+  var LABEL_MAP_VIEW = app.getAttribute('data-label-map-view') || 'Switch to map view';
+  var LABEL_LIST_VIEW = app.getAttribute('data-label-list-view') || 'Switch to list view';
+  var LABEL_NO_RESULTS = app.getAttribute('data-label-no-results') || 'No results for';
   var tocNav = viewArea.querySelector('.guide-toc');
   var guideTopicsEl = viewArea.querySelector('.guide-topics');
   var areaSections = Array.prototype.slice.call(viewArea.querySelectorAll('[data-area]'));
@@ -510,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
     guideTopicsEl.hidden = isMap;
     tocNav.hidden = isMap;
     viewToggleBtn.querySelector('i').className = isMap ? 'fas fa-list' : 'fas fa-earth-americas';
-    viewToggleBtn.setAttribute('aria-label', isMap ? 'Switch to list view' : 'Switch to map view');
+    viewToggleBtn.setAttribute('aria-label', isMap ? LABEL_LIST_VIEW : LABEL_MAP_VIEW);
     if (isMap && currentSectionEl) renderAreaMap(currentSectionEl);
   }
 
@@ -656,7 +659,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }).slice(0, 20);
 
     if (!matches.length) {
-      resultsEl.innerHTML = '<p class="search-empty">No results for &ldquo;' + escapeHtml(query) + '&rdquo;</p>';
+      resultsEl.innerHTML = '<p class="search-empty">' + escapeHtml(LABEL_NO_RESULTS) + ' &ldquo;' + escapeHtml(query) + '&rdquo;</p>';
       return;
     }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principal - Chalet Monchique - Guest House</title>
+    <title>Chalet Lidia Lodges Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/pt/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -46,7 +44,7 @@
                 </li>
 
                     <li>
-                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                        <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
                             <i class="fas fa-search"></i>
                         </button>
                     </li>
@@ -55,7 +53,7 @@
 
         <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
         <div class="mobile-nav-actions">
-                <button type="button" class="search-trigger" aria-label="Search the guide">
+                <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
                     <i class="fas fa-search"></i>
                 </button>
 
@@ -74,8 +72,8 @@
 <nav class="mobile-nav link-underline">
     <ul>
             <li>
-                <button type="button" class="search-trigger" aria-label="Search the guide">
-                    <i class="fas fa-search"></i> <span>Search</span>
+                <button type="button" class="search-trigger" aria-label="Pesquisar no guia">
+                    <i class="fas fa-search"></i> <span>Pesquisar</span>
                 </button>
             </li>
         <li>
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1193" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('');"></div>
+    <div class="parallax-bg" style="background-image: url(''); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -113,12 +111,16 @@
         <i class="area-icon fas fa-route"></i>
         <h2 class="area-title headline-secondary"></h2>
     </div>
-    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Mudar para vista de mapa">
         <i class="fas fa-earth-americas"></i>
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="Tudo o que precisa de saber para uma estadia perfeita."
+     data-label-map-view="Mudar para vista de mapa"
+     data-label-list-view="Mudar para vista de lista"
+     data-label-no-results="Sem resultados para">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -128,31 +130,31 @@
                     <span class="area-card-icon"><i class="fas fa-route"></i></span>
                     <h3>Como chegar</h3>
                     <p>Morada, indica&#xE7;&#xF5;es e estacionamento.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/inicio-main" class="area-card">
+                <a href="#/em-casa-main" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>In&#xED;cio</h3>
+                    <h3>Em casa</h3>
                     <p>Regras da casa, wifi, check-in e check-out.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/dicas-locais-main" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
                     <h3>Dicas locais</h3>
                     <p>Restaurantes e bares de que os nossos anfitri&#xF5;es gostam.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/emergencia-main" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
                     <h3>Emerg&#xEA;ncia</h3>
                     <p>Contactos para qualquer assunto urgente.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/perguntas-frequentes-main" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
                     <h3>Perguntas frequentes</h3>
                     <p>Respostas r&#xE1;pidas &#xE0;s perguntas mais comuns.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
         </div>
 
@@ -185,7 +187,7 @@
     </summary>
     <div class="topic-body">
             <div class="topic-meta">
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6951,-9.3718" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6951,-9.3718" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
             </div>
         <p>Rua 5 de Outubro nº 108<br>2765-522 São Pedro do Estoril</p>
     </div>
@@ -237,10 +239,44 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="aeroporto" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-plane-arrival topic-icon"></i>
+        <span class="topic-title">Aeroporto</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>Para vir em transportes do aeroporto há estas opções: <a href="https://maps.app.goo.gl/cNM6VuYSLfZCMfY26">https://maps.app.goo.gl/cNM6VuYSLfZCMfY26</a></p>
+<p>A mais prática deve ser:</p>
+<ul>
+<li>Metro linha vermelha até Alameda</li>
+<li>Metro linha verde até Cais do Sodré</li>
+<li>Comboio até São Pedro do Estoril (grande parte do percurso à beira rio)</li>
+</ul>
+<p>Deve demorar cerca de 1h20 (depende das ligações).</p>
+<p>Alternativamente pode vir de Uber ou Bolt por cerca de 20€ e 30min, se não for em hora de ponta.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="lisboa-cascais-sintra" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-train topic-icon"></i>
+        <span class="topic-title">Lisboa / Cascais / Sintra</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>A ligação a Cascais é muito prática: 8min de comboio.<br>A ligação a Lisboa (Cais do Sodré) também: 24min de comboio.</p>
+<p>Para vir de Lisboa, o melhor será apanhar o comboio no Cais do Sodré e sair em São Pedro do Estoril.</p>
+<p>Para ir para Sintra de transportes seria preciso ir até Cascais e apanhar 2 autocarros, há estas opções: <a href="https://maps.app.goo.gl/gybUXJpEq2QRk4VC9">https://maps.app.goo.gl/gybUXJpEq2QRk4VC9</a>. Um Uber ou Bolt deve custar cerca de 12€ e demorar 40min.</p>
+    </div>
+</details>
+
 </section>
 
 
-<section class="topic-list" data-area="inicio-main" data-area-title="In&#xED;cio" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="em-casa-main" data-area-title="Em casa" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">Regras da casa, acesso ao wifi e hor&#xE1;rios de check-in/check-out para uma estadia tranquila.</p>
@@ -323,14 +359,14 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;12&#x2013;18 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694765,-9.372163" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694765,-9.372163" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.faunafloralisboa.com/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 969 925 478"><i class="fas fa-phone"></i> &#x2B;351 969 925 478</a>
             </div>
         <p>Para um pequeno-almoço, um almoço saudável ou um brunch!</p>
             <div class="topic-slider swiper">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/media/yf5drjwb/fauna-flora-1--1000x750.jpg?width=1000&amp;height=750&amp;format=webp&amp;quality=75&amp;v=1dd6538f080b066" alt="Fauna e Flora" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="/media/yf5drjwb/fauna-flora-1.jpg?width=1000&amp;format=webp&amp;quality=75&amp;v=1dd6538f080b066" alt="Fauna e Flora" loading="lazy" decoding="async"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -347,7 +383,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;15&#x2013;25 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694629,-9.370893" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694629,-9.370893" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.instagram.com/botecodalinha/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 21 468 6125"><i class="fas fa-phone"></i> &#x2B;351 21 468 6125</a>
             </div>
@@ -365,7 +401,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;18&#x2013;25 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.695264,-9.372337" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.695264,-9.372337" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.pacobigotes.pt/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 21 407 6708"><i class="fas fa-phone"></i> &#x2B;351 21 407 6708</a>
             </div>
@@ -383,7 +419,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;15&#x2013;20 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6953,-9.3724" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6953,-9.3724" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.instagram.com/compania_de_bebidas/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 21 466 5067"><i class="fas fa-phone"></i> &#x2B;351 21 466 5067</a>
             </div>
@@ -401,7 +437,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;25&#x2013;35 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694336,-9.370371" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.694336,-9.370371" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://omira.eatbu.com/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 21 468 8069"><i class="fas fa-phone"></i> &#x2B;351 21 468 8069</a>
             </div>
@@ -419,7 +455,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;8&#x2013;15 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.693545,-9.372093" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.693545,-9.372093" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.facebook.com/pontadosal/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
             </div>
         <p>Petiscos e bebidas com a melhor vista.</p>
@@ -436,7 +472,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;30&#x2013;40 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3696" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3696" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://mardsal.shop/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 960 096 081"><i class="fas fa-phone"></i> &#x2B;351 960 096 081</a>
             </div>
@@ -454,7 +490,7 @@
     <div class="topic-body">
             <div class="topic-meta">
                     <span class="topic-meta-item"><i class="fas fa-euro-sign"></i> &#x20AC;10&#x2013;15 per person</span>
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3692" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.6938,-9.3692" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
                     <a class="topic-meta-item" href="https://www.instagram.com/esplanadasaopedro/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
                     <a class="topic-meta-item" href="tel:&#x2B;351 21 467 0027"><i class="fas fa-phone"></i> &#x2B;351 21 467 0027</a>
             </div>
@@ -480,7 +516,7 @@
     </summary>
     <div class="topic-body">
             <div class="topic-meta">
-                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.7238,-9.4103" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Directions</a>
+                    <a class="topic-meta-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=38.7238,-9.4103" target="_blank" rel="noopener"><i class="fas fa-diamond-turn-right"></i> Dire&#xE7;&#xF5;es</a>
             </div>
         <ul><li>Número europeu de emergência (polícia, ambulância, bombeiros): <strong>112</strong></li><li>Hospital mais próximo: Hospital de Cascais - Dr. José de Almeida</li><li>O seu anfitrião está disponível por WhatsApp para qualquer assunto urgente: <em>[número de telefone do anfitrião]</em></li></ul>
     </div>
@@ -555,6 +591,22 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="taxa-municipal-turistica" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-euro-sign topic-icon"></i>
+        <span class="topic-title">Taxa Municipal Tur&#xED;stica</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>A taxa municipal turística é um encargo financeiro obrigatório cobrado por vários municípios em Portugal a quem pernoita em alojamentos locais. Destina-se a compensar o impacto que a atividade turística provoca nas infraestruturas e nos serviços públicos locais.</p>
+<p><strong>Quem paga?</strong><br>A taxa turística por dormida é aplicada a todos os hóspedes, independentemente da nacionalidade ou residência, a partir dos 13 anos, por pessoa e por dormida, até ao limite de 7 dormidas por estadia.</p>
+<p><strong>Onde?</strong><br>Nos estabelecimentos turísticos e estabelecimentos de alojamento local.</p>
+<p><strong>Qual o valor?</strong><br>O valor devido é de 4€ por noite até ao valor máximo de 28€ (7 noites seguidas estadia/pessoa).</p>
+<p>Aqui está o <a href="/media/g5qlwquj/cmc_taxa_turistica_a5_por.pdf" rel="noopener" target="_blank" title="Folheto da Câmara Municipal de Cascais sobre a Taxa Turística (PT)">Folheto da Câmara Municipal de Cascais sobre a Taxa Turística (PT)</a></p>
+    </div>
+</details>
+
 </section>
             </div>
 
@@ -573,8 +625,8 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
-            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+            <input type="text" id="search-input" placeholder="Pesquisar no guia&#x2026;" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Fechar pesquisa"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
     </div>

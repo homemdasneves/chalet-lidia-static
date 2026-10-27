@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T1 - Chalet Monchique - Guest House</title>
+    <title>Lodge con Vistas a la Piscina Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/es/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -46,7 +44,7 @@
                 </li>
 
                     <li>
-                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                        <button type="button" class="search-trigger" aria-label="Buscar en la gu&#xED;a">
                             <i class="fas fa-search"></i>
                         </button>
                     </li>
@@ -55,7 +53,7 @@
 
         <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
         <div class="mobile-nav-actions">
-                <button type="button" class="search-trigger" aria-label="Search the guide">
+                <button type="button" class="search-trigger" aria-label="Buscar en la gu&#xED;a">
                     <i class="fas fa-search"></i>
                 </button>
 
@@ -74,8 +72,8 @@
 <nav class="mobile-nav link-underline">
     <ul>
             <li>
-                <button type="button" class="search-trigger" aria-label="Search the guide">
-                    <i class="fas fa-search"></i> <span>Search</span>
+                <button type="button" class="search-trigger" aria-label="Buscar en la gu&#xED;a">
+                    <i class="fas fa-search"></i> <span>Buscar</span>
                 </button>
             </li>
         <li>
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1426" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660');"></div>
+    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660'); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -113,12 +111,16 @@
         <i class="area-icon fas fa-route"></i>
         <h2 class="area-title headline-secondary"></h2>
     </div>
-    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Cambiar a vista de mapa">
         <i class="fas fa-earth-americas"></i>
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="Todo lo que necesitas saber para una estancia estupenda."
+     data-label-map-view="Cambiar a vista de mapa"
+     data-label-list-view="Cambiar a vista de lista"
+     data-label-no-results="Sin resultados para">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -128,31 +130,31 @@
                     <span class="area-card-icon"><i class="fas fa-route"></i></span>
                     <h3>C&#xF3;mo llegar</h3>
                     <p>Direcci&#xF3;n, indicaciones y aparcamiento.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/inicio" class="area-card">
+                <a href="#/en-casa" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>Inicio</h3>
+                    <h3>En casa</h3>
                     <p>Normas de la casa, wifi, check-in y check-out.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/consejos-locales" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
                     <h3>Consejos locales</h3>
                     <p>Restaurantes y bares que gustan a nuestros anfitriones.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/emergencia" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
                     <h3>Emergencia</h3>
                     <p>Contactos para cualquier urgencia.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/preguntas-frecuentes" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
                     <h3>Preguntas frecuentes</h3>
                     <p>Respuestas r&#xE1;pidas a las preguntas m&#xE1;s comunes.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Abrir <i class="fas fa-arrow-right"></i></span>
                 </a>
         </div>
 
@@ -201,7 +203,7 @@
 </section>
 
 
-<section class="topic-list" data-area="inicio" data-area-title="Inicio" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="en-casa" data-area-title="En casa" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">Normas de la casa, acceso al wifi y horarios de check-in/check-out para una estancia sin contratiempos.</p>
@@ -260,6 +262,22 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="cuna-de-bebe" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-baby topic-icon"></i>
+        <span class="topic-title">Cuna de beb&#xE9;</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>normalmente intentamos dejar las cunas montadas para los huéspedes que nos indican esa necesidad;</li>
+<li>si necesita una cuna y no está montada, puede encontrar la cuna, el colchón y la ropa de cama dentro de la cama;</li>
+<li>para abrir la cama, tira hacia arriba de las asas que se encuentran en el lateral de la cama.</li>
+</ul>
+    </div>
+</details>
+
 </section>
 
 
@@ -305,8 +323,8 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
-            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+            <input type="text" id="search-input" placeholder="Buscar en la gu&#xED;a&#x2026;" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Cerrar b&#xFA;squeda"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
     </div>
@@ -317,7 +335,7 @@
 <footer class="footer">
     <!-- Parte preta -->
     <div class="footer-top bg-gray-950 text-white text-center py-4">
-        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encu&#xE9;ntranos en:</h3>
         <ul class="link-underline flex justify-center gap-8">
             <li>
                 <a href="#sobre" class="flex items-center gap-1">

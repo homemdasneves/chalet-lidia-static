@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T1 - Chalet Monchique - Guest House</title>
+    <title>Pool View Lodge Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1426" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660');"></div>
+    <div class="parallax-bg" style="background-image: url('/media/44nk4rmn/09_al_spedro.jpg?v=1dd4ae8e4424660'); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -118,7 +116,11 @@
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="All you need to know for a great stay."
+     data-label-map-view="Switch to map view"
+     data-label-list-view="Switch to list view"
+     data-label-no-results="No results for">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -130,9 +132,9 @@
                     <p>Address, directions and parking.</p>
                     <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/home" class="area-card">
+                <a href="#/at-home" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>Home</h3>
+                    <h3>At home</h3>
                     <p>House rules, wifi, check-in and check-out.</p>
                     <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
                 </a>
@@ -201,7 +203,7 @@
 </section>
 
 
-<section class="topic-list" data-area="home" data-area-title="Home" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="at-home" data-area-title="At home" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">House rules, wifi access, and check-in/check-out times for a smooth stay.</p>
@@ -260,6 +262,22 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="baby-cot" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-baby topic-icon"></i>
+        <span class="topic-title">Baby cot</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>we usually try to have the cots set up for guests who let us know they need one;</li>
+<li>if you need a cot and it was not set up, you can find the cot, mattress and bedding inside the bed;</li>
+<li>to open the bed, pull up the straps at the side of the bed - it will open sideways;</li>
+</ul>
+    </div>
+</details>
+
 </section>
 
 
@@ -305,7 +323,7 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
+            <input type="text" id="search-input" placeholder="Search the guide&#x2026;" autocomplete="off" />
             <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
@@ -317,7 +335,7 @@
 <footer class="footer">
     <!-- Parte preta -->
     <div class="footer-top bg-gray-950 text-white text-center py-4">
-        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Find us on:</h3>
         <ul class="link-underline flex justify-center gap-8">
             <li>
                 <a href="#sobre" class="flex items-center gap-1">

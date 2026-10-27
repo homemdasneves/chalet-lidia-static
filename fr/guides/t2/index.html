@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>T2 - Chalet Monchique - Guest House</title>
+    <title>Lodge Familial Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/fr/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -46,7 +44,7 @@
                 </li>
 
                     <li>
-                        <button type="button" class="search-trigger" aria-label="Search the guide">
+                        <button type="button" class="search-trigger" aria-label="Rechercher dans le guide">
                             <i class="fas fa-search"></i>
                         </button>
                     </li>
@@ -55,7 +53,7 @@
 
         <!-- AÇÕES MOBILE (pesquisa + hamburguer) -->
         <div class="mobile-nav-actions">
-                <button type="button" class="search-trigger" aria-label="Search the guide">
+                <button type="button" class="search-trigger" aria-label="Rechercher dans le guide">
                     <i class="fas fa-search"></i>
                 </button>
 
@@ -74,8 +72,8 @@
 <nav class="mobile-nav link-underline">
     <ul>
             <li>
-                <button type="button" class="search-trigger" aria-label="Search the guide">
-                    <i class="fas fa-search"></i> <span>Search</span>
+                <button type="button" class="search-trigger" aria-label="Rechercher dans le guide">
+                    <i class="fas fa-search"></i> <span>Rechercher</span>
                 </button>
             </li>
         <li>
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1435" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('/media/seiidxtk/24_al_spedro_t2.jpg?v=1dd4ae8eefa4caf');"></div>
+    <div class="parallax-bg" style="background-image: url('/media/seiidxtk/24_al_spedro_t2.jpg?v=1dd4ae8eefa4caf'); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -113,12 +111,16 @@
         <i class="area-icon fas fa-route"></i>
         <h2 class="area-title headline-secondary"></h2>
     </div>
-    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Switch to map view">
+    <button type="button" class="view-toggle" id="area-view-toggle" hidden aria-label="Passer &#xE0; la vue carte">
         <i class="fas fa-earth-americas"></i>
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="Tout ce qu&#x27;il faut savoir pour un excellent s&#xE9;jour."
+     data-label-map-view="Passer &#xE0; la vue carte"
+     data-label-list-view="Passer &#xE0; la vue liste"
+     data-label-no-results="Aucun r&#xE9;sultat pour">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -128,31 +130,31 @@
                     <span class="area-card-icon"><i class="fas fa-route"></i></span>
                     <h3>Comment venir</h3>
                     <p>Adresse, itin&#xE9;raire et stationnement.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Ouvrir <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/accueil" class="area-card">
+                <a href="#/a-la-maison" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>Accueil</h3>
+                    <h3>&#xC0; la maison</h3>
                     <p>R&#xE8;glement int&#xE9;rieur, wifi, arriv&#xE9;e et d&#xE9;part.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Ouvrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/bonnes-adresses" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-utensils"></i></span>
                     <h3>Bonnes adresses</h3>
                     <p>Restaurants et bars que nos h&#xF4;tes adorent.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Ouvrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/urgences" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-triangle-exclamation"></i></span>
                     <h3>Urgences</h3>
                     <p>Contacts pour toute urgence.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Ouvrir <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="#/faq" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-circle-question"></i></span>
                     <h3>FAQ</h3>
                     <p>R&#xE9;ponses rapides aux questions courantes.</p>
-                    <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
+                    <span class="area-card-arrow">Ouvrir <i class="fas fa-arrow-right"></i></span>
                 </a>
         </div>
 
@@ -201,7 +203,7 @@
 </section>
 
 
-<section class="topic-list" data-area="accueil" data-area-title="Accueil" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="a-la-maison" data-area-title="&#xC0; la maison" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">R&#xE8;glement int&#xE9;rieur, acc&#xE8;s wifi et horaires d&#x27;arriv&#xE9;e/de d&#xE9;part pour un s&#xE9;jour sans souci.</p>
@@ -324,6 +326,30 @@
 <li>si votre groupe a besoin d'utiliser le canapé-lit, un matelas avec un drap se trouve à l'intérieur du lit double ; vous pouvez le placer sur le lit du canapé ;</li>
 <li>pour ouvrir le lit double, écartez le banc situé au pied du lit et vous verrez des anneaux en tissu ;</li>
 <li>tirez ces anneaux vers le haut et le lit s'ouvrira par le bas ;</li>
+<li>pour ouvrir le canapé-lit, suivez les étapes des images suivantes ;</li>
+</ul>
+            <div class="topic-slider swiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/media/353hc4mc/sofa-family-1.png?width=1000&amp;format=webp&amp;quality=75&amp;v=1dd65904db15ed6" alt="Canap&#xE9;-lit" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="/media/r2qip21m/sofa-family-2.png?width=1000&amp;format=webp&amp;quality=75&amp;v=1dd65904e6e7328" alt="Canap&#xE9;-lit" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="/media/gxqovqpg/sofa-family-3.png?width=1000&amp;format=webp&amp;quality=75&amp;v=1dd65904f0b35db" alt="Canap&#xE9;-lit" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="lit-bebe" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-baby topic-icon"></i>
+        <span class="topic-title">Lit b&#xE9;b&#xE9;</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <ul>
+<li>nous essayons généralement de laisser les lits bébé montés pour les voyageurs qui nous en font la demande ;</li>
+<li>si vous avez besoin d'un lit bébé et qu'il n'a pas été monté, vous pouvez trouver le lit, le matelas et le linge de lit dans le placard de la chambre, sur les étagères du haut - vous y trouverez le lit bébé, un matelas, du linge de lit et une chaise bébé</li>
 </ul>
     </div>
 </details>
@@ -373,8 +399,8 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
-            <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
+            <input type="text" id="search-input" placeholder="Rechercher dans le guide&#x2026;" autocomplete="off" />
+            <button type="button" id="search-close" aria-label="Fermer la recherche"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
     </div>
@@ -385,7 +411,7 @@
 <footer class="footer">
     <!-- Parte preta -->
     <div class="footer-top bg-gray-950 text-white text-center py-4">
-        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Retrouvez-nous sur :</h3>
         <ul class="link-underline flex justify-center gap-8">
             <li>
                 <a href="#sobre" class="flex items-center gap-1">

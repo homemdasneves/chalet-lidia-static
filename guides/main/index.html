@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main - Chalet Monchique - Guest House</title>
+    <title>Chalet Lidia Lodges Guides | Chalet L&#xED;dia Lodges</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css-themes/chalet-monchique.css" /> <!-- Theme CSS -->
     <!-- dependencies -->
@@ -24,9 +24,7 @@
 <header class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="/guides/">
-                <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
-            </a>
+            <img src="/media/cxylapb0/logo.png?v=1dd6538f0b4d210" alt="Chalet L&#xED;dia Lodges" />
         </div>
 
         <!-- NAV DESKTOP -->
@@ -93,7 +91,7 @@
     
 <!-- Hero Section -->
 <header id="hero-1193" class="hero hero-small h-[40vh]">
-    <div class="parallax-bg" style="background-image: url('');"></div>
+    <div class="parallax-bg" style="background-image: url(''); background-position: center;"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1 class="flex flex-col items-center text-center">
@@ -118,7 +116,11 @@
     </button>
 </div>
 
-<div id="guide-app">
+<div id="guide-app"
+     data-home-header="All you need to know for a great stay."
+     data-label-map-view="Switch to map view"
+     data-label-list-view="Switch to list view"
+     data-label-no-results="No results for">
 
     <!-- ===================== HOME VIEW ===================== -->
     <section id="view-home" class="guide-view">
@@ -130,9 +132,9 @@
                     <p>Address, directions and parking.</p>
                     <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
                 </a>
-                <a href="#/home-main" class="area-card">
+                <a href="#/at-home-main" class="area-card">
                     <span class="area-card-icon"><i class="fas fa-house"></i></span>
-                    <h3>Home</h3>
+                    <h3>At home</h3>
                     <p>House rules, wifi, check-in and check-out.</p>
                     <span class="area-card-arrow">Open <i class="fas fa-arrow-right"></i></span>
                 </a>
@@ -237,10 +239,44 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="airport" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-plane-arrival topic-icon"></i>
+        <span class="topic-title">Airport</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>To get here from the airport by public transport, these are the options: <a href="https://maps.app.goo.gl/cNM6VuYSLfZCMfY26">https://maps.app.goo.gl/cNM6VuYSLfZCMfY26</a></p>
+<p>The most practical one should be:</p>
+<ul>
+<li>Red line metro to Alameda</li>
+<li>Green line metro to Cais do Sodré</li>
+<li>Train to São Pedro do Estoril (most of the ride runs along the river)</li>
+</ul>
+<p>It should take about 1h20 (depending on connections).</p>
+<p>Alternatively, you can take an Uber or Bolt for about €20 and 30 min, outside rush hour.</p>
+    </div>
+</details>
+
+
+<details class="topic" data-topic="lisbon-cascais-sintra" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-train topic-icon"></i>
+        <span class="topic-title">Lisbon / Cascais / Sintra</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>The connection to Cascais is very convenient: 8 min by train.<br>So is the connection to Lisbon (Cais do Sodré): 24 min by train.</p>
+<p>To come from Lisbon, the best option is to take the train at Cais do Sodré and get off at São Pedro do Estoril.</p>
+<p>To get to Sintra by public transport you would need to go to Cascais and take 2 buses; these are the options: <a href="https://maps.app.goo.gl/gybUXJpEq2QRk4VC9">https://maps.app.goo.gl/gybUXJpEq2QRk4VC9</a>. An Uber or Bolt should cost about €12 and take 40 min.</p>
+    </div>
+</details>
+
 </section>
 
 
-<section class="topic-list" data-area="home-main" data-area-title="Home" data-area-icon="fas fa-house" hidden
+<section class="topic-list" data-area="at-home-main" data-area-title="At home" data-area-icon="fas fa-house" hidden
     data-house-coords="38.6951,-9.3718" data-house-title="Chalet L&#xED;dia Lodges" data-house-icon="fas fa-house">
 
     <p class="topic-list-intro">House rules, wifi access, and check-in/check-out times for a smooth stay.</p>
@@ -330,7 +366,7 @@
         <p>For breakfast, a healthy lunch or brunch!</p>
             <div class="topic-slider swiper">
                 <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/media/yf5drjwb/fauna-flora-1--1000x750.jpg?width=1000&amp;height=750&amp;format=webp&amp;quality=75&amp;v=1dd6538f080b066" alt="Fauna and Flora" loading="lazy" decoding="async"></div>
+                        <div class="swiper-slide"><img src="/media/yf5drjwb/fauna-flora-1.jpg?width=1000&amp;format=webp&amp;quality=75&amp;v=1dd6538f080b066" alt="Fauna and Flora" loading="lazy" decoding="async"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -555,6 +591,22 @@
     </div>
 </details>
 
+
+<details class="topic" data-topic="municipal-tourist-tax" data-coords="" data-tags="">
+    <summary class="topic-header">
+        <i class="fas fa-euro-sign topic-icon"></i>
+        <span class="topic-title">Municipal Tourist Tax</span>
+        <i class="chevron fas fa-chevron-down"></i>
+    </summary>
+    <div class="topic-body">
+        <p>The municipal tourist tax is a mandatory charge levied by several municipalities in Portugal on guests staying overnight in local accommodation. It is intended to offset the impact that tourism has on local infrastructure and public services.</p>
+<p><strong>Who pays?</strong><br>The tourist tax applies to all guests, regardless of nationality or residence, aged 13 and over, per person and per night, up to a limit of 7 nights per stay.</p>
+<p><strong>Where?</strong><br>In tourist establishments and local accommodation establishments.</p>
+<p><strong>How much?</strong><br>The amount due is €4 per night, up to a maximum of €28 (7 consecutive nights per stay/person).</p>
+<p>Here's the <a href="/media/jzkfzprg/cmc_taxa_turistica_a5_eng.pdf" rel="noopener" target="_blank" title="Cascais Municipality Flyer on the Tourist Tax (EN)">Cascais Municipality Flyer on the Tourist Tax (EN)</a></p>
+    </div>
+</details>
+
 </section>
             </div>
 
@@ -573,7 +625,7 @@
     <div class="search-panel">
         <div class="search-panel-header">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Search the guide…" autocomplete="off" />
+            <input type="text" id="search-input" placeholder="Search the guide&#x2026;" autocomplete="off" />
             <button type="button" id="search-close" aria-label="Close search"><i class="fas fa-xmark"></i></button>
         </div>
         <div class="search-results" id="search-results"></div>
@@ -585,7 +637,7 @@
 <footer class="footer">
     <!-- Parte preta -->
     <div class="footer-top bg-gray-950 text-white text-center py-4">
-        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Encontre-nos em:</h3>
+        <h3 class="headline-secondary uppercase mb-2 text-[1.5rem]">Find us on:</h3>
         <ul class="link-underline flex justify-center gap-8">
             <li>
                 <a href="#sobre" class="flex items-center gap-1">
